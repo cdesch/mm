@@ -1,0 +1,1344 @@
+/* line 1, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 2, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+body {
+  background: url(body-bg-9e9684c21b17f8866162d293d8d698f19106f2d042cf85d2ac96af6c2868a99e.jpg) no-repeat #A9ADC0;
+  background-size: 100% auto;
+}
+
+/*#fullscreenheight Slider*/
+/* line 5, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 6, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight.loading * {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* line 7, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight.loading {
+  background: url(loading-d10eb5a58c9999096317616d135f79b9edaa42854c42341f858d5d579118ee8a.gif) no-repeat center #fff !important;
+}
+
+/* line 8, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight a, #fullscreenheight input {
+  outline: none;
+}
+
+/*Pagination*/
+/* line 11, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .pagi {
+  width: 50%;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  left: 25%;
+  bottom: 100px;
+}
+
+/* line 12, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .pagi a {
+  width: 10px;
+  height: 10px;
+  text-indent: -15000px;
+  overflow: hidden;
+  font-size: 1px;
+  margin: 0 2px;
+  display: inline-block;
+  background: #fff;
+  opacity: 0.3;
+  border-radius: 80px;
+}
+
+/* line 13, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .pagi a.active, .pagi a.find {
+  opacity: 1;
+}
+
+/*Controls (Next & Previous)*/
+/* line 16, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .control a {
+  width: 48px;
+  height: 48px;
+  display: block;
+  font-size: 1px;
+  text-indent: -15000px;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 45%;
+}
+
+/* line 17, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .control a.prev {
+  left: 30px;
+  background-image: url(prev-52a8e7684839ae2511dbe2981ba654b676be0f6cfd7ed674f675b3e36de2d769.png);
+}
+
+/* line 18, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .control a.next {
+  right: 30px;
+  background-image: url(next-9c24ce4a1dfbb805e4746e11a2fedbc3ab5cfdafca4502f3ba50572c071337d2.png);
+}
+
+/*Play & Pause*/
+/* line 21, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .process {
+  width: 0px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* line 22, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .playpause {
+  width: 9px;
+  height: 11px;
+  display: inline-block;
+  background: url(pause-44b1abfb4d68ed4cad60ff7d49a07a86e058c2a6075c468f93dfab757eb5dfd1.png) no-repeat;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+/* line 23, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .playpause.pause {
+  background: url(play-4cb6de4c26307d610b2aeb14f01f03094dc3e2000b1c86c766204e174dc51b5c.png) no-repeat;
+}
+
+/*Search*/
+/* line 26, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .search {
+  width: 98%;
+  text-align: center;
+  padding: 2px;
+  overflow: hidden;
+  position: absolute;
+  bottom: -66px;
+  left: 1%;
+}
+
+/* line 27, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .search input {
+  width: 400px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #A4A495;
+  padding: 12px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #aaa;
+  background: url(search-icon-62d2633be88566efac25cacd79ae20b826d243d94c0de8ea026f51bc6d96e6e3.png) no-repeat 96% center #fff;
+  outline: none;
+}
+
+/* line 28, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .search .searchresult {
+  margin: 17px;
+  display: inline-block;
+  position: absolute;
+}
+
+/* line 29, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .search .searchresult a {
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin: 0 3px;
+  text-indent: 10000px;
+  background: #2472C4;
+  border-radius: 80px;
+}
+
+/*Slide*/
+/* line 32, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide {
+  color: #1961A9;
+  overflow: hidden;
+  position: relative;
+}
+
+/* #fullscreenheight .slide img.aeonian-t { margin-top: 35%; }*/
+/*Youtube Video Cover Div*/
+/* line 36, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide .cover {
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background: #DCE1E4;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* line 37, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide .cover.hide {
+  opacity: 1;
+  height: auto;
+  background: transparent;
+}
+
+/* line 38, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide .cover .close {
+  font-family: FontAwesome;
+  font-size: 32px;
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+
+/* line 39, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide .cover .close:before {
+  content: "\f00d";
+}
+
+/*Youtube Video In Background Div*/
+/* line 42, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide .videoinbg {
+  z-index: 0;
+}
+
+/* line 44, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide {
+  text-align: center;
+  background: url(bg-1-1920-full-fcee2ecd9b5fcb577883ac77c580107314e057195e5308bd100470858058266d.jpg) no-repeat center #BDF0E3;
+  background-size: 100% 100%;
+}
+
+/* line 45, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide img.aeonian-t {
+  margin-top: 35%;
+}
+
+/*#fullscreenheight .slide h1 { font-size: 65px; font-weight: 900; color:#475159; letter-spacing: 15px; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; }*/
+/* line 47, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #006CB4;
+  margin-top: 10%;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+
+/* line 48, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide h3 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 15px;
+  text-shadow: 1px 1px 1px #333;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+/* line 50, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide .bg {
+  width: 100%;
+  min-height: 100%;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 51, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide .l-left {
+  position: relative;
+  z-index: 998;
+  display: block;
+  margin: 550px auto 0 auto;
+  width: 500px;
+  height: 175px;
+  background-color: rgba(218, 218, 216, 0.5);
+}
+
+/* line 52, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide .l-right {
+  position: relative;
+  z-index: 999;
+  display: block;
+  margin: 0 auto;
+  top: -150px;
+  left: -145px;
+}
+
+/* line 53, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide .l-top {
+  position: relative;
+  z-index: 999;
+  display: block;
+  margin: 0 auto;
+  top: -265px;
+  left: -45px;
+}
+
+/* line 54, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#fullscreenheight .slide .l-bottom {
+  position: relative;
+  z-index: 999;
+  display: block;
+  margin: 0 auto;
+  top: -225px;
+  left: 120px;
+  font-size: 25px;
+  font-weight: 900;
+  color: #475159;
+  letter-spacing: 5px;
+}
+
+/*Media Query*/
+@media (max-width: 1575px) {
+  /* line 59, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide img.aeonian-t {
+    width: 200px;
+  }
+
+  /* line 60, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide img.aeonian-b {
+    width: 200px;
+  }
+
+  /* line 61, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide h1 {
+    font-size: 55px;
+  }
+
+  /* line 62, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide h2 {
+    font-size: 25px;
+  }
+
+  /* line 63, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 70, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .control a {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* line 72, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide {
+    background-size: auto 100%;
+  }
+
+  /* line 73, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide img.aeonian-t {
+    width: 200px;
+  }
+
+  /* line 74, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide img.aeonian-b {
+    width: 200px;
+  }
+
+  /* line 75, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide h1 {
+    font-size: 50px;
+  }
+
+  /* line 76, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide h2 {
+    font-size: 25px;
+  }
+
+  /* line 77, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide ul {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 84, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .control a.next {
+    right: 10px;
+    top: 70px;
+  }
+
+  /* line 85, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .control a.prev {
+    left: inherit;
+    right: 45px;
+    top: 70px;
+  }
+
+  /* line 87, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .pagi {
+    display: none;
+  }
+
+  /* line 89, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide img.aeonian-t {
+    max-width: 150px;
+  }
+
+  /* line 90, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide img.aeonian-b {
+    max-width: 150px;
+  }
+
+  /* line 91, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide h1 {
+    font-size: 40px;
+  }
+
+  /* line 92, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide h2 {
+    font-size: 20px;
+  }
+
+  /* line 93, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide ul {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 100, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide.index2 img.imac {
+    display: none;
+  }
+
+  /* line 101, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide.index2 img.ipad {
+    display: none;
+  }
+
+  /* line 102, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide.index2 img.iphone {
+    right: 50px !important;
+  }
+
+  /* line 104, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide.index3 img.setting1 {
+    display: none;
+  }
+
+  /* line 105, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide.index3 img.setting2 {
+    display: none;
+  }
+
+  /* line 106, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide.index3 img.setting3 {
+    right: 50px !important;
+  }
+}
+@media (max-width: 568px) {
+  /* line 112, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide.index1 h2 {
+    margin-top: 30px;
+  }
+
+  /* line 113, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #fullscreenheight .slide.index1 h3 {
+    font-size: 11px;
+    font-weight: 900;
+  }
+}
+/*Other*/
+/* line 122, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.clear {
+  clear: both;
+}
+
+/* line 123, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 124, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 125, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 126, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.clearfix {
+  display: block;
+}
+
+/* line 128, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+#header {
+  width: 60%;
+  margin: 15px auto;
+  position: fixed;
+  top: 0;
+  left: 20%;
+  z-index: 9999;
+}
+
+/* line 129, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu, .custom-menu * {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  background: none;
+}
+
+/* line 130, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* line 131, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu {
+  position: relative;
+  z-index: 999;
+  font-size: 0;
+  line-height: 0;
+  text-align: right;
+}
+
+/* line 132, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 133, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-right-width: 0px;
+  font-size: 13px;
+  line-height: 45px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* line 134, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li a {
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #666;
+  transition: background 0.4s, color 0.4s;
+  -o-transition: background 0.4s, color 0.4s;
+  -ms-transition: background 0.4s, color 0.4s;
+  -moz-transition: background 0.4s, color 0.4s;
+  -webkit-transition: background 0.4s, color 0.4s;
+}
+
+/* line 135, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li > div {
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  left: -9999px;
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -o-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+  -o-transition: -o-transform 0.4s, opacity 0.4s;
+  -ms-transition: -ms-transform 0.4s, opacity 0.4s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.4s;
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+}
+
+/* line 136, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li > div:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: transparent;
+}
+
+/* line 137, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li > div:before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 24px;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.9);
+  border-left: 5px solid transparent;
+}
+
+/* line 138, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li:hover > a, .custom-menu li.current > a {
+  background: #2da5da;
+  color: #fff;
+}
+
+/* line 139, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li:hover > div {
+  left: 0;
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+}
+
+/* line 140, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .right {
+  float: none;
+  border-right-width: 0;
+  border-left-width: 0px;
+}
+
+/* line 141, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .right > div {
+  -o-transform-origin-x: 100%;
+  -ms-transform-origin-x: 100%;
+  -moz-transform-origin-x: 100%;
+  -webkit-transform-origin-x: 100%;
+}
+
+/* line 142, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .right:hover > div {
+  right: 0;
+  left: auto;
+}
+
+/* line 143, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .right:hover > div:before {
+  right: 24px;
+  left: auto;
+}
+
+/* line 144, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .switcher {
+  display: none;
+}
+
+/* line 145, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li li {
+  display: block;
+  float: none;
+  border-width: 0;
+  border-top-width: 1px;
+  line-height: 21px;
+  white-space: normal;
+}
+
+/* line 146, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li li:first-child {
+  border-top: 0;
+}
+
+/* line 147, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li li a {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* line 148, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li li > div {
+  top: 0;
+  margin: 0 0 0 8px;
+}
+
+/* line 149, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li li > div:after {
+  top: 0;
+  right: 100%;
+  bottom: auto;
+  left: auto;
+  width: 8px;
+  height: 100%;
+}
+
+/* line 150, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li li > div:before {
+  top: 22px;
+  right: 100%;
+  bottom: auto;
+  left: auto;
+  border-top: 5px solid transparent;
+  border-right: 5px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 5px solid transparent;
+}
+
+/* line 151, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li li:hover > div {
+  left: 100%;
+}
+
+/* line 152, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .right li > div {
+  margin: 0 8px 0 0;
+  -o-transform-origin-x: 100%;
+  -ms-transform-origin-x: 100%;
+  -moz-transform-origin-x: 100%;
+  -webkit-transform-origin-x: 100%;
+}
+
+/* line 153, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .right li > div:after {
+  right: auto;
+  left: 100%;
+}
+
+/* line 154, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .right li > div:before {
+  right: auto;
+  left: 100%;
+  border-right: none;
+  border-left: 5px solid rgba(255, 255, 255, 0.9);
+}
+
+/* line 155, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .right li:hover > div {
+  right: 100%;
+  left: auto;
+}
+
+/* line 156, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 157, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-bottom li > div {
+  top: auto;
+  bottom: 100%;
+  margin: 0 0 8px;
+  -o-transform-origin-y: 100%;
+  -ms-transform-origin-y: 100%;
+  -moz-transform-origin-y: 100%;
+  -webkit-transform-origin-y: 100%;
+}
+
+/* line 158, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-bottom li > div:after {
+  top: 100%;
+  bottom: auto;
+}
+
+/* line 159, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-bottom li > div:before {
+  top: 100%;
+  bottom: auto;
+  border-top: 5px solid rgba(255, 255, 255, 0.9);
+  border-right: 5px solid transparent;
+  border-bottom: none;
+  border-left: 5px solid transparent;
+}
+
+/* line 160, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-bottom li li > div {
+  top: auto;
+  bottom: 0;
+}
+
+/* line 161, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-bottom li li > div:before {
+  top: auto;
+  bottom: 22px;
+}
+
+/* line 162, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-bottom.custom-menu-fixed {
+  top: auto;
+  bottom: 0;
+}
+
+/* line 163, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-left li, .custom-menu-pos-right li {
+  display: block;
+  float: none;
+  border-width: 0;
+  border-top-width: 1px;
+}
+
+/* line 164, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-left li:first-child, .custom-menu-pos-right li:first-child {
+  border-top: 0;
+}
+
+/* line 165, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-left li > div, .custom-menu-pos-right li > div {
+  top: 0;
+}
+
+/* line 166, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-left li > div {
+  margin: 0 0 0 8px;
+}
+
+/* line 167, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-right li > div {
+  margin: 0 8px 0 0;
+  -o-transform-origin-x: 100%;
+  -ms-transform-origin-x: 100%;
+  -moz-transform-origin-x: 100%;
+  -webkit-transform-origin-x: 100%;
+}
+
+/* line 168, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-left li > div:after, .custom-menu-pos-right li > div:after {
+  top: 0;
+  bottom: auto;
+  width: 8px;
+  height: 100%;
+}
+
+/* line 169, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-left li > div:after {
+  right: 100%;
+  left: auto;
+}
+
+/* line 170, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-right li > div:after {
+  right: auto;
+  left: 100%;
+}
+
+/* line 171, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-left li > div:before, .custom-menu-pos-right li > div:before {
+  top: 22px;
+  bottom: auto;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+/* line 172, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-left li > div:before {
+  right: 100%;
+  left: auto;
+  border-right: 5px solid rgba(255, 255, 255, 0.9);
+}
+
+/* line 173, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-right li > div:before {
+  right: auto;
+  left: 100%;
+  border-left: 5px solid rgba(255, 255, 255, 0.9);
+}
+
+/* line 174, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-left li:hover > div {
+  left: 100%;
+}
+
+/* line 175, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-right li:hover > div {
+  right: 100%;
+  left: auto;
+}
+
+/* line 176, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-left .bottom > div, .custom-menu-pos-right .bottom > div {
+  top: auto;
+  bottom: 0;
+  -o-transform-origin-y: 100%;
+  -ms-transform-origin-y: 100%;
+  -moz-transform-origin-y: 100%;
+  -webkit-transform-origin-y: 100%;
+}
+
+/* line 177, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-left .bottom > div:before, .custom-menu-pos-right .bottom > div:before {
+  top: auto;
+  bottom: 22px;
+}
+
+/* line 178, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-right li li > div {
+  margin: 0 8px 0 0;
+  -o-transform-origin-x: 100%;
+  -ms-transform-origin-x: 100%;
+  -moz-transform-origin-x: 100%;
+  -webkit-transform-origin-x: 100%;
+}
+
+/* line 179, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-right li li > div:after {
+  right: auto;
+  left: 100%;
+}
+
+/* line 180, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-right li li > div:before {
+  right: auto;
+  left: 100%;
+  border-right: none;
+  border-left: 5px solid rgba(255, 255, 255, 0.9);
+}
+
+/* line 181, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-right li li:hover > div {
+  right: 100%;
+  left: auto;
+}
+
+/* line 182, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-left.custom-menu-fixed {
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  width: auto;
+}
+
+/* line 183, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu-pos-right.custom-menu-fixed {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  width: auto;
+}
+
+/* line 184, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .grid-column {
+  float: left;
+  border-color: #d9d9d9;
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+/* line 185, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .grid-column:first-child {
+  margin-left: 0;
+  border-left: 0;
+}
+
+/* line 186, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .grid-column2, .custom-menu .grid-container2 {
+  width: 155px;
+}
+
+/* line 187, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .grid-column3, .custom-menu .grid-container3 {
+  width: 233px;
+}
+
+/* line 188, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .grid-column4, .custom-menu .grid-container4 {
+  width: 311px;
+}
+
+/* line 189, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .grid-column5, .custom-menu .grid-container5 {
+  width: 389px;
+}
+
+/* line 190, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .grid-column6, .custom-menu .grid-container6 {
+  width: 467px;
+}
+
+/* line 191, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .grid-column7, .custom-menu .grid-container7 {
+  width: 545px;
+}
+
+/* line 192, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .grid-column8, .custom-menu .grid-container8 {
+  width: 623px;
+}
+
+/* line 193, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .grid-column9, .custom-menu .grid-container9 {
+  width: 701px;
+}
+
+/* line 194, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .grid-column10, .custom-menu .grid-container10 {
+  width: 779px;
+}
+
+/* line 195, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .grid-column11, .custom-menu .grid-container11 {
+  width: 857px;
+}
+
+/* line 196, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu .grid-column12, .custom-menu .grid-container12 {
+  width: 935px;
+}
+
+/* line 197, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li a > .fa {
+  display: block;
+  float: left;
+  width: 16px;
+  margin: 0 10px 0 -4px;
+  font-size: 16px;
+  line-height: inherit;
+  text-align: center;
+}
+
+/* line 198, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li a > .fa-single {
+  float: none;
+  margin: 0;
+}
+
+/* line 199, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li a > .fa-indicator {
+  position: relative;
+  top: -1px;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 0 -10px 0 10px;
+  font-size: 9px;
+  line-height: 1;
+  text-align: right;
+}
+
+/* line 200, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+.custom-menu li li a > .fa-indicator {
+  top: 0;
+  float: right;
+  display: block;
+  line-height: inherit;
+}
+
+@media screen and (max-width: 1160px) {
+  /* line 202, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  body {
+    background-size: auto auto;
+  }
+
+  /* line 203, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  #header {
+    width: 98%;
+    left: 1%;
+  }
+
+  /* line 204, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu li a {
+    padding: 0 15px;
+  }
+
+  /* line 205, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu li a > .fa-indicator {
+    margin-right: -5px;
+  }
+
+  /* line 206, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu .grid-column2, .custom-menu .grid-container2 {
+    width: 117px;
+  }
+
+  /* line 207, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu .grid-column3, .custom-menu .grid-container3 {
+    width: 176px;
+  }
+
+  /* line 208, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu .grid-column4, .custom-menu .grid-container4 {
+    width: 235px;
+  }
+
+  /* line 209, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu .grid-column5, .custom-menu .grid-container5 {
+    width: 294px;
+  }
+
+  /* line 210, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu .grid-column6, .custom-menu .grid-container6 {
+    width: 353px;
+  }
+
+  /* line 211, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu .grid-column7, .custom-menu .grid-container7 {
+    width: 412px;
+  }
+
+  /* line 212, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu .grid-column8, .custom-menu .grid-container8 {
+    width: 471px;
+  }
+
+  /* line 213, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu .grid-column9, .custom-menu .grid-container9 {
+    width: 530px;
+  }
+
+  /* line 214, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu .grid-column10, .custom-menu .grid-container10 {
+    width: 589px;
+  }
+
+  /* line 215, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu .grid-column11, .custom-menu .grid-container11 {
+    width: 648px;
+  }
+
+  /* line 216, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu .grid-column12, .custom-menu .grid-container12 {
+    width: 707px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 219, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu .grid-column {
+    float: none;
+    width: auto;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  /* line 220, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu .grid-column:first-child {
+    border-top: 0;
+  }
+
+  /* line 221, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu form fieldset {
+    display: block;
+    padding: 15px 20px;
+  }
+
+  /* line 222, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu form section {
+    margin-bottom: 10px;
+  }
+
+  /* line 223, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu form .row {
+    margin: 0 -10px;
+  }
+
+  /* line 224, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu form .col {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /* line 225, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-stack > li {
+    display: block;
+    float: none;
+    border: 0;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  /* line 226, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-stack > li:first-child {
+    border-top: 0;
+  }
+
+  /* line 227, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-switcher > li {
+    display: none;
+    float: none;
+    border: 0;
+  }
+
+  /* line 228, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-switcher > .switcher {
+    display: block;
+  }
+
+  /* line 229, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-switcher:hover > li {
+    display: block;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  /* line 230, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-switcher:hover > .switcher {
+    display: none;
+  }
+
+  /* line 231, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-stack li > div, .custom-menu-response-to-stack li > [class^="grid-container"], .custom-menu-response-to-switcher li > div, .custom-menu-response-to-switcher li > [class^="grid-container"] {
+    top: 100%;
+    bottom: auto;
+    width: auto;
+    margin: 8px 0 0 0;
+    -o-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
+
+  /* line 232, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-stack li > div:after, .custom-menu-response-to-switcher li > div:after {
+    top: auto;
+    right: auto;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 8px;
+  }
+
+  /* line 233, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-stack li > div:before, .custom-menu-response-to-switcher li > div:before {
+    display: none;
+  }
+
+  /* line 234, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-stack li a > .fa, .custom-menu-response-to-switcher li a > .fa {
+    margin: 0 15px 0 0;
+  }
+
+  /* line 235, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-stack li:hover > div, .custom-menu-response-to-stack li:hover > [class^="grid-container"], .custom-menu-response-to-switcher li:hover > div, .custom-menu-response-to-switcher li:hover > [class^="grid-container"] {
+    right: 0;
+    left: 51px;
+  }
+
+  /* line 236, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-stack li li > div, .custom-menu-response-to-switcher li li > div {
+    top: 100%;
+    width: auto;
+    margin: 8px 0 0 0;
+  }
+
+  /* line 237, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-stack li li > div:after, .custom-menu-response-to-switcher li li > div:after {
+    top: auto;
+    right: auto;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 8px;
+  }
+
+  /* line 238, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-stack li li:hover > div, .custom-menu-response-to-switcher li li:hover > div {
+    right: 0;
+    left: 51px;
+  }
+
+  /* line 239, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-stack .search .input input, .custom-menu-response-to-switcher .search .input input {
+    width: 100%;
+  }
+
+  /* line 240, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-icons li {
+    position: static;
+    font-size: 0;
+  }
+
+  /* line 241, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-icons li a {
+    padding: 0 10px;
+  }
+
+  /* line 242, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-icons li > div, .custom-menu-response-to-icons li > [class^="grid-container"] {
+    width: 100%;
+  }
+
+  /* line 243, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-icons li > div:before {
+    display: none;
+  }
+
+  /* line 244, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-icons li a > .fa {
+    margin: 0;
+  }
+
+  /* line 245, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-icons li a > .fa-indicator {
+    position: static;
+    display: block;
+    float: right;
+    margin-left: 10px;
+    line-height: 45px;
+  }
+
+  /* line 246, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-icons li li {
+    position: relative;
+    font-size: 13px;
+  }
+
+  /* line 247, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-icons li li > div, .custom-menu-response-to-icons .right li > div {
+    top: 100%;
+    margin: 8px 0 0 0;
+  }
+
+  /* line 248, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-icons li li > div:after, .custom-menu-response-to-icons .right li > div:after {
+    top: auto;
+    right: auto;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 8px;
+  }
+
+  /* line 249, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-icons li li:hover > div, .custom-menu-response-to-icons .right li:hover > div {
+    right: 0;
+    left: 41px;
+    width: auto;
+  }
+
+  /* line 250, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-icons li li a > .fa {
+    margin-right: 10px;
+  }
+
+  /* line 251, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-icons li li a > .fa-indicator {
+    margin-right: 0px;
+  }
+
+  /* line 252, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-response-to-icons.custom-menu-anim-flip li li > div {
+    top: 100%;
+    margin: 8px 0 0 0;
+    transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+  }
+
+  /* line 253, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-pos-bottom.custom-menu-response-to-icons li li > div {
+    top: auto;
+    bottom: 100%;
+    margin: 0 0 8px 0;
+  }
+
+  /* line 254, /Users/cj/RubymineProjects/macdonaldmedia/app/assets/stylesheets/full-screen-height.scss */
+  .custom-menu-pos-bottom.custom-menu-response-to-icons li li > div:after {
+    top: 100%;
+    bottom: auto;
+  }
+}
